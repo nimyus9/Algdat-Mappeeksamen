@@ -12,8 +12,9 @@ Se oblig-tekst for alle krav, og husk spesielt på følgende:
 * Readme-filen her er fyllt ut som beskrevet
 
 # Beskrivelse av oppgaveløsning (4-8 linjer/setninger per oppgave)
-*Tester ny setning
-Vi har brukt git til å dokumentere arbeidet vårt. Jeg har 16 commits totalt, og hver logg-melding beskriver det jeg har gjort av endringer.
+Vi har brukt git til å dokumentere arbeidet mitt. 
+
+Jeg har x commits totalt, og hver logg-melding beskriver det jeg har gjort av endringer.
 
 * Oppgave 1: Løste ved å implementere ...
 * Oppgave 2: ...
