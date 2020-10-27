@@ -16,5 +16,5 @@ Vi har brukt git til å dokumentere arbeidet mitt.
 
 Jeg har x commits totalt, og hver logg-melding beskriver det jeg har gjort av endringer.
 
-* Oppgave 1: Løste ved å implementere ...
+* Oppgave 1: løste oppgaven ved å lese kildekode som ble limt inn, tolket at foreldrereferanse måtte legges inn når ny node lages.
 * Oppgave 2: ...
