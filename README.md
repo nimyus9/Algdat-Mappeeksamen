@@ -29,3 +29,7 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
 * Oppgave 4:
     - postOrden: vi finner første posten ved å bruke metoden vi lagde i oppgave 3, og utfører en oppgave ved å bruke nodens verdi. Deretter vi bruker vi en while-løkke for å finne neste postorden, bruker metoden laget i oppgave 3, utfører oppgave. Går ut av løkken når siste node i postorden, som er roten.
     - postordenRecursive: Håndterer hvis p er null så skal treet ikke travaseres. Lager en rekursiv-metode som kaller på seg selv og sender inn nodens venstre og høyre barn.
+    
+* Oppgave 5:
+    - serialize: lager en Arraylist som skal inneholde alle nodeverdiene , deretter lagde vi en kø og legger inn rotnoden i køen, som inneholder referanser til treet. Videre lager vi en while-løkke som iterer gjennom hele køen. Vi tar ut første noden fra køen og sjekker ut om noden er lik null. Hvis noden ikke er lik null så så legger vi til nodens verdi i arraylisten, videre legger vi til nodens venstre og høyre barn i køen, hel til vi alle verdiene er lagt i listen. Vi retunerer arraylisten som innholder treets nodeverdier.
+    - deserialize:
