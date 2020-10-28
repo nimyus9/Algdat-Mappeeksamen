@@ -35,6 +35,6 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     - deserialize: lager en nytt tre av EksamenSBinTre, deretter lager vi en for-løkke for å iterere gjennom arraylisten som innholder alle nodeverdiene.Vi henter alle nodeverdiene fra arraylisten også legges disse inn i treet ved å bruke legginn-metoden vi kodet.
     
 * Oppgave 6:
-    - fjern:
+    - fjern: kopierte kildekode 5.2.8 d, inn i løsningen og la til endringene i tillfelle 1,2,3 og sørget for at pekeren forelder fikk riktig verdi etter fjerning. 
     - fjernAlle:
     - nullstill:
