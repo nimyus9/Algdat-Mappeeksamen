@@ -28,4 +28,4 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     
 * Oppgave 4:
     - postOrden: vi finner første posten ved å bruke metoden vi lagde i oppgave 3, og utfører en oppgave ved å bruke nodens verdi. Deretter vi bruker vi en while-løkke for å finne neste postorden, bruker metoden laget i oppgave 3, utfører oppgave. Går ut av løkken når siste node i postorden, som er roten.
-    - postordenRecursive: 
+    - postordenRecursive: Håndterer hvis p er null så skal treet ikke travaseres. Lager en rekursiv-metode som kaller på seg selv og sender inn nodens venstre og høyre barn.
