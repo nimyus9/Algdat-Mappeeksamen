@@ -202,7 +202,26 @@ public class EksamenSBinTre<T> {
     }
 
     public void nullstill() {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if(!tom()){
+            int antall = antall();
+            if (antall == 1){
+                fjern(rot.verdi);
+                endringer++;
+            }else {
+                Node<T> p = rot;
+                while (p.venstre != null){
+                    p = p.venstre;
+                }
+                T verdi;
+
+                for (int i = 0; i < antall; i++){
+                    verdi = p.verdi;
+                    p = nesteInorden(p);
+                    fjern(verdi);
+                    endringer++;
+                }
+            }
+        }
     }
 
     private static <T> Node<T> førstePostorden(Node<T> p) {
@@ -292,5 +311,26 @@ public class EksamenSBinTre<T> {
         return tre;
     }
 
+    // hjelpemetode - inorden
+    private static <T> Node<T> nesteInorden(Node<T> p){
+        if (p.høyre !=null) {
+            p = p.høyre;
+            while(p.venstre != null){
+                p = p.venstre;
+
+            } return p;
+
+        }else {
+            while(p !=null) {
+                if(p.forelder != null && p.forelder.høyre !=p){
+                    return p.forelder;
+                }
+                p = p.forelder;
+            }
+
+        }
+
+        return p;
+    }
 
 } // ObligSBinTre
