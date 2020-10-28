@@ -36,5 +36,5 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     
 * Oppgave 6:
     - fjern: kopierte kildekode 5.2.8 d, inn i løsningen og la til endringene i tillfelle 1,2,3 og sørget for at pekeren forelder fikk riktig verdi etter fjerning. 
-    - fjernAlle:
+    - fjernAlle: Vi lager en hjelpevariabel som holder tellinga på antall ganger en verdi har blitt fjernet. 
     - nullstill:
