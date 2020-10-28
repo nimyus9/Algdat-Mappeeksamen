@@ -32,4 +32,9 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     
 * Oppgave 5:
     - serialize: lager en Arraylist som skal inneholde alle nodeverdiene , deretter lagde vi en kø og legger inn rotnoden i køen, som inneholder referanser til treet. Videre lager vi en while-løkke som iterer gjennom hele køen. Vi tar ut første noden fra køen og sjekker ut om noden er lik null. Hvis noden ikke er lik null så så legger vi til nodens verdi i arraylisten, videre legger vi til nodens venstre og høyre barn i køen, hel til vi alle verdiene er lagt i listen. Vi retunerer arraylisten som innholder treets nodeverdier.
-    - deserialize:
+    - deserialize: lager en nytt tre av EksamenSBinTre, deretter lager vi en for-løkke for å iterere gjennom arraylisten som innholder alle nodeverdiene.Vi henter alle nodeverdiene fra arraylisten også legges disse inn i treet ved å bruke legginn-metoden vi kodet.
+    
+* Oppgave 6:
+    - fjern:
+    - fjernAlle:
+    - nullstill:
