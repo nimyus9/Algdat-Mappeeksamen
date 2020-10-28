@@ -181,7 +181,7 @@ public class EksamenSBinTre<T> {
     }
 
     public int antall(T verdi) {
-        if(verdi.equals(null)){
+        if(verdi == null){
             return 0;
         }
 
@@ -215,10 +215,12 @@ public class EksamenSBinTre<T> {
                 T verdi;
 
                 for (int i = 0; i < antall; i++){
-                    verdi = p.verdi;
-                    p = nesteInorden(p);
-                    fjern(verdi);
-                    endringer++;
+                    if (p != null) {
+                        verdi = p.verdi;
+                        p = nesteInorden(p);
+                        fjern(verdi);
+                        endringer++;
+                    }
                 }
             }
         }
@@ -241,12 +243,12 @@ public class EksamenSBinTre<T> {
         if(p.høyre == p){
             return p.høyre;
         }
-        Node forelder = p.forelder;
+        Node<T> forelder = p.forelder;
         if(forelder.høyre == null || forelder.høyre == p){
             return forelder;
         }
 
-        Node nestePostorden = forelder.høyre;
+        Node<T> nestePostorden = forelder.høyre;
         while(nestePostorden.venstre != null){
             nestePostorden = nestePostorden.venstre;
         }
@@ -266,8 +268,7 @@ public class EksamenSBinTre<T> {
 
         oppgave.utførOppgave(p.verdi);
 
-        while (true) {
-            if(p == rot) break;
+        while (p != rot) {
             p = nestePostorden(p);
             oppgave.utførOppgave(p.verdi);
         }
@@ -285,16 +286,16 @@ public class EksamenSBinTre<T> {
         oppgave.utførOppgave(p.verdi);
     }
 
+    @SuppressWarnings("NonAsciiCharacters")
     public ArrayList<T> serialize() {
        ArrayList<T> nodeVerdier = new ArrayList<>();
        Queue<Node<T>> kø= new LinkedList<>();
        kø.offer(rot);                   // legger til rot-node i køen
 
        while (!kø.isEmpty()){
-           Node node = kø.poll();       // tar ut første element fra køen
-           if (node == null){
-           } else {
-               nodeVerdier.add((T)node.verdi);
+           Node<T> node = kø.poll();       // tar ut første element fra køen
+           if (node != null) {
+               nodeVerdier.add(node.verdi);
                kø.offer(node.venstre);
                kø.offer(node.høyre);
            }
@@ -303,10 +304,10 @@ public class EksamenSBinTre<T> {
     }
 
     static <K> EksamenSBinTre<K> deserialize(ArrayList<K> data, Comparator<? super K> c) {
-        EksamenSBinTre tre = new EksamenSBinTre(c);
+        EksamenSBinTre<K> tre = new EksamenSBinTre<>(c);
 
-        for (int i = 0; i < data.size(); i++){
-            tre.leggInn(data.get(i));
+        for (K datum : data) {
+            tre.leggInn(datum);
         }
         return tre;
     }
@@ -329,8 +330,7 @@ public class EksamenSBinTre<T> {
             }
 
         }
-
-        return p;
+        return null;
     }
 
 } // ObligSBinTre
