@@ -150,7 +150,28 @@ public class EksamenSBinTre<T> {
     }
 
     private static <T> Node<T> nestePostorden(Node<T> p) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if(p.forelder == null){
+            return null;
+        }
+        if(p.høyre == p){
+            return p.høyre;
+        }
+        Node forelder = p.forelder;
+        if(forelder.høyre == null || forelder.høyre == p){
+            return forelder;
+        }
+
+        Node nestePostorden = forelder.høyre;
+        while(nestePostorden.venstre != null){
+            nestePostorden = nestePostorden.venstre;
+        }
+        if(nestePostorden.høyre != null){
+            while (nestePostorden.høyre !=null){
+                nestePostorden = nestePostorden.høyre;
+            }
+        }
+        return nestePostorden;
+
     }
 
     public void postorden(Oppgave<? super T> oppgave) {
