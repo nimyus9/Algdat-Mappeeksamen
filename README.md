@@ -27,5 +27,5 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     Videre lager vi en hjelpevariabel for forelder, deretter sjekker vi om foreldre noden har et eksisterende høyre barn eller om høyre noden har samme verdi som vi sender inn. vi lager en hjelpevariabel for neste postorden, og traverserer gjennom venstrebarna til gitt node og sjekker deretter om det eksisterer noen høyre barn. Hvis det eksisterer, så traverserer vi til vi treffer bladnoden som er vår neste postorden og returnerer denne.
     
 * Oppgave 4:
-    - postOrden: 
+    - postOrden: vi finner første posten ved å bruke metoden vi lagde i oppgave 3, og utfører en oppgave ved å bruke nodens verdi. Deretter vi bruker vi en while-løkke for å finne neste postorden, bruker metoden laget i oppgave 3, utfører oppgave. Går ut av løkken når siste node i postorden, som er roten.
     - postordenRecursive: 
