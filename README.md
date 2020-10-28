@@ -39,3 +39,11 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     - fjernAlle: Vi lager en hjelpevariabel som holder tellinga på antall ganger en verdi har blitt fjernet. 
     - nullstill: så lenge treet ikke er tomt går vi inn og fjerner verdiene. Dette gjør vi først ved å hente ut antall noder i treet. Vi sjekker først om antall noder er lik en node så betyr dette at kun roten står igjen og vi bruker fjern-metoden for å fjerne noden.
     Hvis vi har fler enn en node i treet, vi traverserer gjennom treet helt til første bladnode fra venstre side. Lager en ny variabel for å ta vare på verdien og bruker en for-løkke for å finne neste node i postorden og fjerne denne ved å bruke nestePostorden,- og fjern-metodene vi har kodet tidligere og øker endringer variabelen.
+    
+# Beksrivelse av warnings i filen
+- **Non-ASCII characters in an identifier**: 
+- **Private field 'endringer' is assigned but never accessed**: 
+- **Method 'inneholder(T)' is never used**: 
+- **Return value of the method is never used**: 
+- **Non-ASCII characters in an identifier**: 
+- **Dereference of 'p' may produce 'NullPointerException'**: 
