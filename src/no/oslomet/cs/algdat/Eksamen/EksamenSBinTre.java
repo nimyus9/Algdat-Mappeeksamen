@@ -171,11 +171,21 @@ public class EksamenSBinTre<T> {
             }
         }
         return nestePostorden;
-
     }
 
-    public void postorden(Oppgave<? super T> oppgave) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+    public void postorden(Oppgave<? super T> oppgave)
+    {
+        if (tom()) return;  // tomt tre
+
+        Node<T> p = førstePostorden(rot);
+
+        oppgave.utførOppgave(p.verdi);
+
+        while (true) {
+            if(p == rot) break;
+            p = nestePostorden(p);
+            oppgave.utførOppgave(p.verdi);
+        }
     }
 
     public void postordenRecursive(Oppgave<? super T> oppgave) {
