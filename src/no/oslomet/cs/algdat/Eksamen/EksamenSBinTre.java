@@ -80,7 +80,7 @@ public class EksamenSBinTre<T> {
         return antall == 0;
     }
 
-    public final boolean leggInn(T verdi)    // skal ligge i class SBinTre
+    public boolean leggInn(T verdi)    // skal ligge i class SBinTre
     {
         Objects.requireNonNull(verdi, "Ulovlig med nullverdier!");
 
