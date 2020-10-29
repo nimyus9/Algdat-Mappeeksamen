@@ -42,8 +42,8 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     
 # Beksrivelse av warnings i filen
 - **Non-ASCII characters in an identifier**: Det er blitt brukt bokstaver/tegn som ikke er en del av ASCII tegnesett.
-- **Private field 'endringer' is assigned but never accessed**: 'Endringer' er private og ikke aksesert. 
-- **Method 'inneholder(T)' is never used**: Metoden 'inneholder (T)' blir ikke brukt.
-- **Return value of the method is never used**: Retur verdien av metoden blir ikke brukt.
+- **Private field 'endringer' is assigned but never accessed**: 'Endringer' er private og ikke aksesert, gjør ikke noe denne og i med at den kommer fra oppgavesettet. 
+- **Method 'inneholder(T)' is never used**: Metoden 'inneholder (T)' blir ikke brukt. Følger oppgavetekst og ser at jeg ikke har behov for å bruke i den.
+- **Return value of the method is never used**: Retur verdien av metoden blir ikke brukt. Har ikke funnet behov for å bruke returverdien til metoden 'leggInn'.
 - **Non-ASCII characters in an identifier**: Det er blitt brukt bokstaver/tegn som ikke er er del av ASCII tegnesett.
-- **Dereference of 'p' may produce 'NullPointerException'**: Programmet prøver å lese eller skrive til minnet med en Null peker. Dermed kan dette gi oss en 'NullPointerException.
+- **Dereference of 'p' may produce 'NullPointerException'**: Programmet prøver å lese eller skrive til minnet med en Null peker. Dermed kan dette gi oss en 'NullPointerException. Finner ingen vei rundt dette, Testene på 'EksamenTest'går gjennom.
