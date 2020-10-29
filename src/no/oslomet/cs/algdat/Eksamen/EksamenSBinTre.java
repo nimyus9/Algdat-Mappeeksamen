@@ -159,10 +159,12 @@ public class EksamenSBinTre<T> {
             p.verdi = r.verdi;   // kopierer verdien i r til p
 
             if (s != p) s.venstre = r.høyre;
-            else s.høyre = r.høyre;
+            else {
+                s.høyre = r.høyre;
 
-            if (r.høyre !=null){
+            if (r.høyre !=null) {
                 r.forelder.høyre = s;
+                }
             }
         }
 
