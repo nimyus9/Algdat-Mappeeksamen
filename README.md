@@ -41,9 +41,9 @@ ved å iterere gjennom treet ved hjelp av compare-metoden navigerer vi oss til v
     Hvis vi har fler enn en node i treet, vi traverserer gjennom treet helt til første bladnode fra venstre side. Lager en ny variabel for å ta vare på verdien og bruker en for-løkke for å finne neste node i postorden og fjerne denne ved å bruke nestePostorden,- og fjern-metodene vi har kodet tidligere og øker endringer variabelen.
     
 # Beksrivelse av warnings i filen
-- **Non-ASCII characters in an identifier**: 
-- **Private field 'endringer' is assigned but never accessed**: 
-- **Method 'inneholder(T)' is never used**: 
-- **Return value of the method is never used**: 
-- **Non-ASCII characters in an identifier**: 
-- **Dereference of 'p' may produce 'NullPointerException'**: 
+- **Non-ASCII characters in an identifier**: Det er blitt brukt bokstaver/tegn som ikke er en del av ASCII tegnesett.
+- **Private field 'endringer' is assigned but never accessed**: 'Endringer' er private og ikke aksesert. 
+- **Method 'inneholder(T)' is never used**: Metoden 'inneholder (T)' blir ikke brukt.
+- **Return value of the method is never used**: Retur verdien av metoden blir ikke brukt.
+- **Non-ASCII characters in an identifier**: Det er blitt brukt bokstaver/tegn som ikke er er del av ASCII tegnesett.
+- **Dereference of 'p' may produce 'NullPointerException'**: Programmet prøver å lese eller skrive til minnet med en Null peker. Dermed kan dette gi oss en 'NullPointerException.
